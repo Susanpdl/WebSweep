@@ -1,4 +1,4 @@
-// DataSweepr Extension Popup - JWT Authentication & Real-Time Sync
+// WebSweep Extension Popup - JWT Authentication & Real-Time Sync
 // DOM elements
 const authSection = document.getElementById('authSection');
 const appSection = document.getElementById('appSection');

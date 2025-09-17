@@ -33,7 +33,7 @@ const Contact = () => {
           {/* Sidebar */}
           <div className="col-span-1 flex flex-col items-center md:items-start bg-primary-50 rounded-xl p-8 shadow mb-8 md:mb-0">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Contact Info</h2>
-            <div className="flex items-center mb-4 text-gray-700"><Mail className="mr-2 text-primary-600" /> support@datasweepr.com</div>
+            <div className="flex items-center mb-4 text-gray-700"><Mail className="mr-2 text-primary-600" /> support@websweep.com</div>
             <div className="flex items-center mb-4 text-gray-700"><Phone className="mr-2 text-primary-600" /> +1 (555) 123-4567</div>
             <div className="flex items-center text-gray-700"><MapPin className="mr-2 text-primary-600" /> 123 Privacy Lane, Internet City</div>
           </div>

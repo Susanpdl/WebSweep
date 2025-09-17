@@ -1,4 +1,4 @@
-# DataSweepr - Real-Time Domain Tracker Extension
+# WebSweep - Real-Time Domain Tracker Extension
 
 A Chrome extension that provides real-time domain tracking with JWT authentication and secure backend synchronization.
 

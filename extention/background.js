@@ -1,8 +1,8 @@
-// DataSweepr Background Script - Real-Time Domain Tracking
+// WebSweep Background Script - Real-Time Domain Tracking
 // Listens for navigation events and syncs with backend
 
 // Configuration
-const BACKEND_BASE_URL = 'https://api.datasweepr.com'; // Replace with actual backend URL
+const BACKEND_BASE_URL = 'https://api.websweep.com'; // Replace with actual backend URL
 const SYNC_INTERVAL = 30000; // 30 seconds
 const MAX_DOMAINS_PER_SYNC = 50;
 
@@ -14,7 +14,7 @@ let lastSyncTime = 0;
 
 // Initialize background script
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('DataSweepr extension installed');
+  console.log('WebSweep extension installed');
   initializeExtension();
 });
 
@@ -155,7 +155,7 @@ async function syncWithBackend() {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${jwtToken}`,
-        'X-Requested-With': 'DataSweepr-Extension'
+        'X-Requested-With': 'WebSweep-Extension'
       },
       body: JSON.stringify({
         domains: domainObjects,
@@ -193,7 +193,7 @@ async function authenticateUser(email, password) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Requested-With': 'DataSweepr-Extension'
+        'X-Requested-With': 'WebSweep-Extension'
       },
       body: JSON.stringify({ email, password })
     });
@@ -231,7 +231,7 @@ async function logout() {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${jwtToken}`,
-          'X-Requested-With': 'DataSweepr-Extension'
+          'X-Requested-With': 'WebSweep-Extension'
         }
       });
     }

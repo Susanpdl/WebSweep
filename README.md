@@ -1,10 +1,10 @@
-# DataSweepr
+# WebSweep
 
 A comprehensive data management and analysis platform designed to help users track their digital footprint and manage their online privacy.
 
 ## 🎯 Project Overview
 
-DataSweepr consists of two main components:
+WebSweep consists of two main components:
 - **Chrome Extension** - Real-time domain tracking with JWT authentication
 - **Web Application** - React-based dashboard for data analysis and management
 
@@ -45,8 +45,8 @@ DataSweepr consists of two main components:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/datasweepr.git
-   cd datasweepr
+   git clone https://github.com/yourusername/websweep.git
+   cd websweep
    ```
 
 2. **Set up the Chrome Extension:**
@@ -67,7 +67,7 @@ DataSweepr consists of two main components:
 ## 📁 Project Structure
 
 ```
-datasweepr/
+websweep/
 ├── extention/                 # Chrome extension
 │   ├── manifest.json         # Extension configuration
 │   ├── background.js         # Service worker for real-time tracking
