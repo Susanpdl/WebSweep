@@ -19,7 +19,7 @@ const Home = () => {
               Wipe Your <span className="text-primary-600">Web Surfing Blueprint</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-xl">
-              Datasweepr helps you reduce your digital footprint and minimize spam by removing your browsing data from third parties.
+              WebSweep helps you reduce your digital footprint and minimize spam by removing your browsing data from third parties.
             </p>
             <Link
               to="/signup"
@@ -71,7 +71,7 @@ const Home = () => {
       {/* Benefits Section */}
       <section className="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why Datasweepr?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Why WebSweep?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
             <div className="flex flex-col items-center bg-white rounded-xl p-8 shadow hover:scale-105 transition-transform">
               <Zap className="h-12 w-12 text-yellow-500 mb-3" />
@@ -96,14 +96,14 @@ const Home = () => {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Star className="mx-auto h-10 w-10 text-yellow-400 mb-2" />
-          <blockquote className="text-xl italic text-gray-700 mb-4">“Datasweepr made it so easy to clean up my digital footprint. I feel safer and get way less spam!”</blockquote>
+          <blockquote className="text-xl italic text-gray-700 mb-4">"WebSweep made it so easy to clean up my digital footprint. I feel safer and get way less spam!"</blockquote>
           <div className="text-gray-900 font-semibold">— Happy User</div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="py-8 bg-gray-100 text-center text-gray-500 text-sm mt-auto">
-        &copy; {new Date().getFullYear()} Datasweepr. All rights reserved.
+        &copy; {new Date().getFullYear()} WebSweep. All rights reserved.
       </footer>
     </div>
   );

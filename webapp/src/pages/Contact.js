@@ -85,7 +85,7 @@ const Contact = () => {
 
       {/* Footer */}
       <footer className="py-8 bg-gray-100 text-center text-gray-500 text-sm mt-auto">
-        &copy; {new Date().getFullYear()} Datasweepr. All rights reserved.
+        &copy; {new Date().getFullYear()} WebSweep. All rights reserved.
       </footer>
     </div>
   );

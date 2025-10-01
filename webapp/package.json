@@ -1,14 +1,14 @@
 {
-  "name": "deepsweep-webapp",
+  "name": "websweep-webapp",
   "version": "1.0.0",
-  "description": "Web application for DeepSweep browser history analytics",
+  "description": "Web application for WebSweep browser history analytics",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.14",
-    "firebase": "^9.22.0",
+    "firebase": "^9.23.0",
     "html-webpack-plugin": "^5.6.3",
     "lucide-react": "^0.263.1",
     "postcss": "^8.4.24",

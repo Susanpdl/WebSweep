@@ -7,7 +7,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-br from-primary-100 via-white to-secondary-100 overflow-hidden">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight drop-shadow-lg">
-          About <span className="text-primary-600">Datasweepr</span>
+          About <span className="text-primary-600">WebSweep</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
           Our mission is to empower everyone to take control of their digital footprint and privacy. We believe your data belongs to you—and only you.
@@ -40,7 +40,7 @@ const About = () => {
 
       {/* Footer */}
       <footer className="py-8 bg-gray-100 text-center text-gray-500 text-sm mt-auto">
-        &copy; {new Date().getFullYear()} Datasweepr. All rights reserved.
+        &copy; {new Date().getFullYear()} WebSweep. All rights reserved.
       </footer>
     </div>
   );

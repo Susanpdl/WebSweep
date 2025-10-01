@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#e0e7ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.6" />
+    </radialGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle with gradient -->
+  <circle cx="64" cy="64" r="60" fill="url(#purpleGradient)" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Central rectangle -->
+  <rect x="58" y="40" width="12" height="48" fill="#ffffff" rx="2"/>
+  
+  <!-- Orbiting circles around the center -->
+  <circle cx="64" cy="20" r="4" fill="#ffffff"/>
+  <circle cx="84" cy="32" r="4" fill="#ffffff"/>
+  <circle cx="96" cy="64" r="4" fill="#ffffff"/>
+  <circle cx="84" cy="96" r="4" fill="#ffffff"/>
+  <circle cx="64" cy="108" r="4" fill="#ffffff"/>
+  <circle cx="44" cy="96" r="4" fill="#ffffff"/>
+  <circle cx="32" cy="64" r="4" fill="#ffffff"/>
+  <circle cx="44" cy="32" r="4" fill="#ffffff"/>
+  
+  <!-- Glow effect -->
+  <circle cx="64" cy="64" r="58" fill="url(#glow)" opacity="0.3"/>
+</svg>
