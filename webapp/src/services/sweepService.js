@@ -1,5 +1,5 @@
 // Sweep Service for n8n integration
-const NGROK_WEBHOOK_URL = "https://860ef85e140c.ngrok-free.app/webhook-test/data-sweep";
+const NGROK_WEBHOOK_URL = process.env.REACT_APP_N8N_WEBHOOK_URL || "https://860ef85e140c.ngrok-free.app/webhook-test/data-sweep";
 
 export async function sweepData(user) {
   const payload = {

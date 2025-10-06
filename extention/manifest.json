@@ -1,28 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "WebSweep - Real-Time Domain Tracker",
-  "version": "2.0",
-  "description": "Real-time domain tracking with JWT authentication and secure backend sync",
+  "name": "WebSweep - Browser History Analyzer",
+  "version": "1.0",
+  "description": "WebSweep helps you analyze and clean your browser history for better privacy and reduced digital footprint",
   "permissions": [
     "history",
-    "activeTab",
-    "webNavigation",
-    "storage",
-    "identity"
+    "activeTab"
   ],
-  "host_permissions": [
-    "https://*/*",
-    "http://localhost:*/*"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "WebSweep - Domain Tracker"
+    "default_title": "WebSweep - Clean Your Digital Footprint"
   },
   "icons": {
     "16": "icon16.png",

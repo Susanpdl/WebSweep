@@ -41,15 +41,23 @@ const Signup = () => {
     try {
       setError('');
       setLoading(true);
+      
       await signup(email, password, name, { street, city, state, zip });
       navigate('/dashboard');
     } catch (error) {
+      console.error('Signup error:', error);
+      
       if (error.code === 'auth/email-already-in-use') {
         setError('User already exists, try to login.');
+      } else if (error.code === 'auth/weak-password') {
+        setError('Password is too weak. Please choose a stronger password.');
+      } else if (error.code === 'auth/invalid-email') {
+        setError('Invalid email address.');
+      } else if (error.message && error.message.includes('Firestore')) {
+        setError('Database error. Please try again.');
       } else {
-      setError('Failed to create an account. Please try again.');
+        setError(`Failed to create account: ${error.message || 'Unknown error'}`);
       }
-      console.error('Signup error:', error);
     } finally {
       setLoading(false);
     }

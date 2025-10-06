@@ -21,17 +21,31 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   async function signup(email, password, name, address) {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    await updateProfile(userCredential.user, {
-          displayName: name
-        });
-    // Save user info in Firestore
-    await setDoc(doc(db, 'users', userCredential.user.uid), {
-      uid: userCredential.user.uid,
-      name,
-      email,
-      address
+    try {
+      // Create user with Firebase Auth
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      
+      // Update user profile
+      await updateProfile(userCredential.user, {
+        displayName: name
       });
+      
+      // Save user info in Firestore
+      const userData = {
+        uid: userCredential.user.uid,
+        name,
+        email,
+        address,
+        createdAt: new Date().toISOString()
+      };
+      
+      await setDoc(doc(db, 'users', userCredential.user.uid), userData);
+      
+      return userCredential;
+    } catch (error) {
+      console.error('Signup error:', error);
+      throw error;
+    }
   }
 
   function login(email, password) {

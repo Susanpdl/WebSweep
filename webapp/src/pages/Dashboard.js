@@ -262,20 +262,29 @@ const Dashboard = () => {
             <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full p-4 mb-3 shadow-lg">
               <Download className="h-10 w-10 text-white" />
             </div>
-            <h2 className="text-2xl font-extrabold mb-2 text-primary-700">Oops!</h2>
-            <p className="mb-6 text-center text-gray-700 font-medium">You need to download the extension first to see your dashboard data.</p>
+            <h2 className="text-2xl font-extrabold mb-2 text-primary-700">Extension Setup Required!</h2>
+            <p className="mb-6 text-center text-gray-700 font-medium">To see your browsing data, you need to use the WebSweep extension first.</p>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+              <h3 className="font-semibold text-blue-800 mb-2">📋 How to get started:</h3>
+              <ol className="text-sm text-blue-700 space-y-1">
+                <li>1. Click the WebSweep extension icon in your browser toolbar</li>
+                <li>2. Sign in with the same account you used here</li>
+                <li>3. Click "Refresh History" to analyze your browsing data</li>
+                <li>4. Come back to this dashboard to see your data!</li>
+              </ol>
+            </div>
             <div className="flex space-x-8 mb-2">
               <a href="#" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
                 <div className="bg-blue-100 rounded-full p-3 mb-1 transition-transform group-hover:scale-110 group-hover:bg-blue-200">
                   <SiGooglechrome size={48} className="text-blue-500" />
                 </div>
-                <button className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow hover:bg-blue-600 transition-colors">Get for Chrome</button>
+                <button className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow hover:bg-blue-600 transition-colors">Extension Installed</button>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center group">
                 <div className="bg-gray-100 rounded-full p-3 mb-1 transition-transform group-hover:scale-110 group-hover:bg-gray-200">
                   <SiSafari size={48} className="text-gray-500" />
                 </div>
-                <button className="bg-gray-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow hover:bg-gray-600 transition-colors">Get for Safari</button>
+                <button className="bg-gray-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow hover:bg-gray-600 transition-colors">Coming Soon</button>
               </a>
             </div>
           </div>

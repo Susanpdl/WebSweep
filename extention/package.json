@@ -1,0 +1,22 @@
+{
+  "name": "websweep-extension",
+  "version": "1.0.0",
+  "description": "WebSweep Chrome extension for browser history analysis and data collection",
+  "main": "popup.js",
+  "scripts": {
+    "build": "echo 'Extension is ready to load in Chrome'",
+    "generate-icons": "node generate-png-icons.js"
+  },
+  "keywords": [
+    "chrome-extension",
+    "browser-history",
+    "domain-parser",
+    "privacy"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
