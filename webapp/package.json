@@ -4,22 +4,14 @@
   "description": "Web application for WebSweep browser history analytics",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "autoprefixer": "^10.4.14",
     "firebase": "^9.23.0",
-    "html-webpack-plugin": "^5.6.3",
     "lucide-react": "^0.263.1",
-    "postcss": "^8.4.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
-    "react-router": "^6.22.3",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
-    "tailwindcss": "^3.3.0",
-    "web-vitals": "^2.1.4"
+    "tailwindcss": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,8 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11"
-  }
+  "devDependencies": {}
 }
