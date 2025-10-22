@@ -1,0 +1,49 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: webweep-n8n
+    ports:
+      - "5678:5678"
+    environment:
+      # Basic Authentication
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=your-secure-password
+      
+      # Server Configuration
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - NODE_ENV=production
+      
+      # Email Configuration (Update these with your actual credentials)
+      - SMTP_HOST=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_USER=your-email@gmail.com
+      - SMTP_PASS=your-app-password
+      - SMTP_SECURE=false
+      
+      # Firebase Configuration (Update with your project details)
+      - FIREBASE_URL=https://your-project-id-default-rtdb.firebaseio.com
+      - FIREBASE_KEY=your-firebase-key
+      
+      # Optional: OpenAI for advanced features
+      - OPENAI_API_KEY=your-openai-api-key
+      
+      # Webhook Configuration
+      - WEBHOOK_URL=http://localhost:5678/webhook
+      
+      # Security (32-character encryption key)
+      - N8N_ENCRYPTION_KEY=your-32-character-encryption-key
+      
+    volumes:
+      # Persist n8n data
+      - ~/.n8n:/home/node/.n8n
+      # Mount workflow file for easy import
+      - ./working-simple-workflow.json:/home/node/.n8n/workflows/websweep-data-removal.json:ro
+    restart: unless-stopped
+    networks:
+      - websweep-network
+
+networks:
+  websweep-network:
+    driver: bridge
